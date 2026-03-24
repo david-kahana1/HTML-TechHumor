@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="StyleSheet.css">
+
+    <title>הומור שהולך לעיבוד</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="site-title">הומור שהולך לעיבוד!</h1>
+    </header>
+
+
+    <main class="main-content">
+
+        <section class="intro">
+            <p>
+                כאן תמצאו משחקי מילים מקוריים שיצא לי לחשוב עליהם תוך כדי עבודה, משימות ולימודים-
+                ועזרו לי לחדד מושגים ולהנות מהדרך.
+                <br><br>
+                מקווה שתמצאו פה תועלת ויעלה לכם חיוך- גם אם לא הכל מובן בפעם הראשונה.
+            </p>
+        </section>
+
+        <section class="jokes-section">
+
+            <!-- מעבד את זה -->
+            <div class="joke-box" data-type="cpu"
+                 data-jokes='["אם אשכחך ירושלים תשכח ג׳מיני",
+                             "תמונה אחת שווה אלף מיילים",
+                             "באנגליה משתמשים בבינה מלכותית",
+                             "ידע במתמטיקה זה לא בא בחשבון!",
+                             "מכונות וירטואליות עוזרות לשמור על איכות הסביבה",
+                             "איך השתמשת ב-AI לכתוב קוד? זה מסוכן."]'>
+                <h2>מעבד את זה</h2>
+                <div class="joke-display"></div>
+                <div class="controls">
+                    <button class="arrow-btn" onclick="prevJoke('cpu')"><i class="fas fa-arrow-right"></i></button>
+                    <button class="arrow-btn" onclick="nextJoke('cpu')"><i class="fas fa-arrow-left"></i></button>
+                </div>
+            </div>
+
+            <!-- בודק היתכנות -->
+            <div class="joke-box" data-type="qa"
+                 data-jokes='["בשביל בדיקות עשן לא צריך לשרוף את המערכת.",
+                            "כשאני מתכנת אני מנסה להביא את הערך שלי = אבל זה {משתנה};",
+                            "משתנה שלא מוגדר הוא חסר ערך וזה נפוץ במיוחד בתכנות מונחה עצבים.",
+                            "מעניין אם חיית המחמד האהובה על בודקי התוכנה היא- Bugs באני.",
+                            "אמנם אני בודק ידני, אבל עברתי טסט ראשון על אוטומט.",
+                            "ההגדרה לבאג זה כשמשהו חרק במערכת.",
+                            "אני כל כך מנוסה שאני בודק ידני על אוטומט.",
+                            "אם ה-Postman לא עובד- אז אין דוור.",
+                            "כשעובדים בשיטת Agile אז הפיתוח מצטבר."]'>
+                <h2>בודק היתכנות</h2>
+                <div class="joke-display"></div>
+                <div class="controls">
+                    <button class="arrow-btn" onclick="prevJoke('qa')"><i class="fas fa-arrow-right"></i></button>
+                    <button class="arrow-btn" onclick="nextJoke('qa')"><i class="fas fa-arrow-left"></i></button>
+                </div>
+            </div>
+
+            <!-- רואה את זה בחומרה -->
+            <div class="joke-box" data-type="hw"
+                 data-jokes='["דיסק קשוח.",
+                            "כמה זיכרון RAM יש לך? לא יודע, זה מתנדף.",
+                            "מה קורה כשמפעילים מחשב? הביאוס מתחיל (BIOS).",
+                            "איזה קידוד מומלץ לגלישה? הסקי (ASCII).",
+                            "אם מערכת ההפעלה איטית, מומלץ לנקות חלונות.",
+                            "התפוח לא נופל רחוק מהמק.",
+                            "בתקופת הקורונה עבדו בשולחן עבודה מרוחק.",
+                            "אם סטף קרי מחטיא- יש תקלת רשת?",
+                            "מעניין אם הטרמינל של לינוקס עובד במצב טיסה."]'>
+                <h2>רואה את זה בחומרה</h2>
+                <div class="joke-display"></div>
+                <div class="controls">
+                    <button class="arrow-btn" onclick="prevJoke('hw')"><i class="fas fa-arrow-right"></i></button>
+                    <button class="arrow-btn" onclick="nextJoke('hw')"><i class="fas fa-arrow-left"></i></button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        © כל הזכויות שבורות ומחכות לתיקון
+    </footer>
+
+
+    <script src="Script.js"></script>
+
+</body>
+</html>
